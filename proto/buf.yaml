@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/mfridman/gophercon2023
+deps:
+  - buf.build/mfridman/common
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT

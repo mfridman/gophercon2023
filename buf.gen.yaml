@@ -1,0 +1,13 @@
+version: v1
+
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/mfridman/gophercon2023/gen
+
+plugins:
+  - plugin: go
+    out: gen
+    opt:
+      # The output file is placed in the same relative directory as the input file
+      - paths=source_relative
