@@ -9,3 +9,13 @@ message Pet {
   string name = 2;
   types.v1.PetType pet_type = 3;
 }
+
+service PetStoreService {
+  rpc ListPets(ListPetsRequest) returns (ListPetsResponse);
+}
+
+message ListPetsRequest {}
+
+message ListPetsResponse {
+  repeated Pet pets = 1;
+}

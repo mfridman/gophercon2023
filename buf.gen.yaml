@@ -11,3 +11,7 @@ plugins:
     opt:
       # The output file is placed in the same relative directory as the input file
       - paths=source_relative
+  - plugin: buf.build/connectrpc/go
+    out: gen
+    opt:
+      - paths=source_relative
